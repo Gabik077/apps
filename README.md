@@ -4,6 +4,7 @@ Android application for control a domotic system
 
 features includes:
 
+- weather information
 - turn on lights
 - active alarm
 - voice commands
