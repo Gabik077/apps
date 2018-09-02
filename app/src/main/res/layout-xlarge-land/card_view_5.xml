@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="420dp"
+    xmlns:app="http://schemas.android.com/tools"
+
+    android:layout_height="320dp"
+
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_lights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Luces:"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="26dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Habitación:"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"/>
+                    <ToggleButton
+                        android:id="@+id/toggleHab"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="100dp"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cocina:"
+                        android:textSize="25dp"
+
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggleCoc"
+                        android:layout_width="60dp"
+                        android:textOff="OFF"
+                        android:textOn="ON"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="143dp"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="420dp"
+    xmlns:app="http://schemas.android.com/tools"
+
+    android:layout_height="320dp"
+
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_consumo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+                android:textSize="26dp"
+
+                android:text="Ahorro Luces:"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txtlimite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spv"
+                android:layout_marginLeft="10dp"
+                android:text="Límite 150.000 Gs."
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:id="@+id/spv">
+            <com.timqi.sectorprogressview.SectorProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pie_chart_expense"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                app:bgColor="#FCE4EC"
+                app:fgColor="#E91E63"
+                app:percent="25"
+                app:startAngle="0" />
+            <TextView
+                android:id="@+id/txtactual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spv"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="Consumo actual 100.000 Gs."
+                android:layout_marginTop="35dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+</FrameLayout>
+
+            <TextView
+                android:id="@+id/txtahorro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spv"
+
+
+                android:text="• Estas ahorrando 50.000 Gs."
+
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
