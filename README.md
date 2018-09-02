@@ -8,7 +8,7 @@ features includes:
 - turn on lights
 - active alarm
 - voice commands
-- get termperture and humidity
+- termperture and humidity
 - create tasks
 - get lights's consume
 - electric lock
