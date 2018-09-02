@@ -10,6 +10,6 @@ features includes:
 - get termperture and humidity
 - create tasks
 - get lights's consume
-
+- electric lock
 
 ![alt text](screenshots/01.png)
