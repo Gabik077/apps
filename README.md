@@ -2,7 +2,7 @@
 
 Android application for control a domotic system
 
-freature includes:
+features includes:
 
 - turn on lights
 - active alarm
