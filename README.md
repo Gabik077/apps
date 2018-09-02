@@ -10,7 +10,7 @@ features includes:
 - voice commands
 - termperture and humidity
 - create tasks
-- get lights's consume
+- lights's consume
 - electric lock
 
 ![alt text](screenshots/01.png)
