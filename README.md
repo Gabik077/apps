@@ -12,4 +12,4 @@ features includes:
 - get lights's consume
 
 
-![Screenshot](screenshots/Captura de pantalla 2018-09-01 a la(s) 00.13.11.png)
+![alt text](screenshots/Captura de pantalla 2018-09-01 a la(s) 00.13.11.png)
